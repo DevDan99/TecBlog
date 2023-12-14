@@ -1,0 +1,121 @@
+/*Limpando formatação padrão dos navegadores*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ***Geral*** */
+
+body{
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #e6e6e6;
+}/*Formata toda o corpo da pagina.*/
+
+h1{
+    font-size: 2.5em;
+    color: #4e4e4e;
+}
+
+h2{
+    color: #f7b600;
+}
+
+h3{
+    color: #565656;
+    background: #ccc;
+    padding: 5px;
+}
+
+.branco{
+    color: white;
+}
+
+.dt-postagem{
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/*Essa formatação é para todos os links da pagina.*/
+a:link, a:visited{
+    color: #f7b600
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+/* ***Menu*** */
+
+a{ /*configuração para todos os links independente do estado.*/
+    text-decoration: none; 
+}
+
+#head a:link, #head a:visited{ /*configurando cor para os estados não visitado e visitado*/
+    color: #fff;
+    padding: 5px 10px;
+}
+
+#head a:hover{ /*configurando cor para o estado sobre o link*/
+    color: #f7b600;
+    background: #fff;
+    text-decoration: none;
+} /*Qaundo é usado o id a frente da tag a, temos o nome de seletores, esses seletrores permitem formatar o link apenas de forma local e não na pagina inteira.*/
+
+
+/* ***leyout*** */
+
+#head{
+    background: #f7b600;
+    padding: 15px;
+    text-align: center; /*Centraliza o texto dentro da div*/
+}
+
+#logo, #menu{
+    padding: 10px;
+}/*Aqui, é formatado dois Ids de uma unica forma.*/
+
+#principal{
+    width: 920px; /*Quando trabalhar com tamanho fixo, essa largura é mais aconselhavel para os equipamentos modernos.*/
+    margin: 0px auto;
+    padding: 15px;
+}
+
+#postagem{
+    width: 660px;
+    float: left;
+}
+
+#lateral{ 
+    width: 240px;
+    float: right;
+}
+
+#rodap{
+    clear: both;
+    background: #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+.conteudo{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.cont-lateral{
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.post-lateral{
+    font-size: 0.8em;
+    padding: 5px;
+}
